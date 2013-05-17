@@ -1,5 +1,5 @@
 class Activity < ActiveRecord::Base
-  attr_accessible :description, :created_at, :name #remove name
+  attr_accessible :description, :created_at
 
   validates_length_of :description, minimum: 10, message: "Give me moar!"
 
