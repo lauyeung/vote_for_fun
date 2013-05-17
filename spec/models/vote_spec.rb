@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Vote do
+describe Vte do
   it "has a created at timestamp" do
     v = Vote.create
     expect(v.created_at).not_to be_nil
