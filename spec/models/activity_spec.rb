@@ -20,7 +20,7 @@ describe Activity do
   activity = Activity.create(description: "shorty")
   activity.valid?
   proper_message = "Please provide a description of atleast 10 characters, thanks!"
-  expect(activity.errors.messages[:description]).to eql(proper_message)
+  expect(activity.errors.messages[:description]).to include(proper_message)
  end
 
  it "returns the activity name in ALL CAPS" do
