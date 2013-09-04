@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Vte do
+describe Vote do
   it "has a note field" do
     note = 'awesome vote note'
     v = Vote.create(note: note)
